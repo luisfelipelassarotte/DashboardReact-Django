@@ -1,0 +1,51 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+
+  th,
+  td {
+    text-align: center;
+    padding: 8px;
+    border-top: 1px solid #dddddd; /* Apenas borda superior e inferior */
+    border-left: none; /* Ocultando a borda esquerda */
+    border-right: none; /* Ocultando a borda direita */
+  }
+
+
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  td {
+    img {
+      max-width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .ButtonEditar,
+  .ButtonDeletar {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .ButtonDeletar {
+    background-color: #dc3545;
+  }
+}

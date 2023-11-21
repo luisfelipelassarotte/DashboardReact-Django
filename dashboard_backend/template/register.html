@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <h3>Signup Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Username" name="username" id="username">
+
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email or Phone" name="email" id="email">
+
+        <label for="password1">Password</label>
+        <input type="password" placeholder="Password" id="password1" name="password1">
+
+
+        <label for="password2">Confrom Password</label>
+        <input type="password" placeholder="Confrom Password" id="password2" name="password2">
+
+        <label for="telefone">Telefone</label>
+        <input type="text" placeholder="Telefone" name="telefone" id="telefone">
+
+        <label for="cpf">CPF</label>
+        <input type="text" placeholder="CPF" name="cpf" id="cpf">
+
+        <label for="conta_bancaria">Conta Bancária</label>
+        <input type="text" placeholder="Conta Bancária" name="conta_bancaria" id="conta_bancaria">
+
+        <label for="endereco">Endereço</label>
+        <input type="text" placeholder="Endereço" name="endereco" id="endereco">
+
+
+        <button type="submit">Signup</button>
+
+        <a href="{% url 'loginuser' %}">i have already account</a>
+    </form>
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
