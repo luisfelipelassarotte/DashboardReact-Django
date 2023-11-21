@@ -6,6 +6,7 @@ const Footer = () => {
         <div className="footer">
             <a href='https://www.linkedin.com/in/%C3%A1lvaro-jo%C3%A3o-da-silva-veiga/'><span>Álvaro Veiga</span></a>
             <a href='https://www.linkedin.com/in/luisfelipelassarotte/'><span>Luis Felipe Lassarotte</span></a>
+            <a href='https://www.instagram.com/luiz_vachod/'><span>Luiz Henrique Vachod</span></a>
         </div>
     )
 }
